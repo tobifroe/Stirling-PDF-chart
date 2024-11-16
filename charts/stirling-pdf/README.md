@@ -40,6 +40,7 @@ helm repo add stirling-pdf https://stirling-tools.github.io/Stirling-PDF-chart
 | envsFrom | list | `[]` | Environment variables from secrets or configmaps to add to the stirling-pdf pods |
 | extraArgs | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
+| image.registry | string | `"ghcr.io"` |  |
 | image.repository | string | `"frooodle/s-pdf"` |  |
 | image.sha | string | `""` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |

@@ -5,6 +5,7 @@ replicaCount: 1
 strategy:
   type: RollingUpdate
 image:
+  registry: ghcr.io
   repository: frooodle/s-pdf
   # -- Overrides the image tag whose default is the chart appVersion.
   tag: ""
