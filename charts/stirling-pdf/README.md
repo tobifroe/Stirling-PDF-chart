@@ -1,6 +1,6 @@
 # stirling-pdf-chart
 
-![Version: 1.1.0](https://img.shields.io/badge/Version-1.1.0-informational?style=flat-square) ![AppVersion: 0.32.0](https://img.shields.io/badge/AppVersion-0.32.0-informational?style=flat-square)
+![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-informational?style=flat-square) ![AppVersion: 0.33.1](https://img.shields.io/badge/AppVersion-0.33.1-informational?style=flat-square)
 
 locally hosted web application that allows you to perform various operations on PDF files
 
@@ -41,7 +41,7 @@ helm repo add stirling-pdf https://stirling-tools.github.io/Stirling-PDF-chart
 | extraArgs | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.registry | string | `"ghcr.io"` |  |
-| image.repository | string | `"frooodle/s-pdf"` |  |
+| image.repository | string | `"stirling-tools/stirling-pdf"` |  |
 | image.sha | string | `""` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | ingress | object | `{"annotations":{},"enabled":false,"hosts":[],"ingressClassName":null,"labels":{},"pathType":"ImplementationSpecific"}` | Ingress for load balancer |
