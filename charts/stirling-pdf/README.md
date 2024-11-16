@@ -41,7 +41,8 @@ helm repo add stirling-pdf https://stirling-tools.github.io/Stirling-PDF-chart
 | extraArgs | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"frooodle/s-pdf"` |  |
-| image.tag | string | `nil` |  |
+| image.sha | string | `""` |  |
+| image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | ingress | object | `{"annotations":{},"enabled":false,"hosts":[],"ingressClassName":null,"labels":{},"pathType":"ImplementationSpecific"}` | Ingress for load balancer |
 | ingress.annotations | object | `{}` | Stirling-pdf Ingress annotations |
 | ingress.hosts | list | `[]` | Must be provided if Ingress is enabled |

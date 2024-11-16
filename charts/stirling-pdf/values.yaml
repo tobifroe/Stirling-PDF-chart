@@ -6,8 +6,9 @@ strategy:
   type: RollingUpdate
 image:
   repository: frooodle/s-pdf
-  # took Chart appVersion by default
-  tag: ~
+  # -- Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+  sha: ""
   pullPolicy: IfNotPresent
 secret:
   labels: {}
