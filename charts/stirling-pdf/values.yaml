@@ -5,9 +5,11 @@ replicaCount: 1
 strategy:
   type: RollingUpdate
 image:
-  repository: frooodle/s-pdf
-  # took Chart appVersion by default
-  tag: ~
+  registry: ghcr.io
+  repository: stirling-tools/stirling-pdf
+  # -- Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+  sha: ""
   pullPolicy: IfNotPresent
 secret:
   labels: {}
