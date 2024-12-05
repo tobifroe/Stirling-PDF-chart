@@ -18,6 +18,8 @@ locally hosted web application that allows you to perform various operations on 
 
 ## Chart Repo
 
+### Helm repository
+
 Add the following repo to use the chart:
 
 ```console
