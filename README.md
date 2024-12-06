@@ -1,6 +1,12 @@
-# Stirling-PDF-chart
+<div align="center">
+<img src="https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF-chart/main/docs/stirling.png" width="80">
+<h1 align="center">Stirling-PDF-chart</h1>
 
 Helm charts for Stirling-PDF
+
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/stirling-pdf&style=for-the-badge)](https://artifacthub.io/packages/search?user=Frooodle)
+
+</div>
 
 ## 🪐 Usage
 
