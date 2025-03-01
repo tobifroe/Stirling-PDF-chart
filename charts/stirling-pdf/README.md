@@ -1,6 +1,6 @@
 # stirling-pdf-chart
 
-![Version: 1.5.0](https://img.shields.io/badge/Version-1.5.0-informational?style=flat-square) ![AppVersion: 0.38.0](https://img.shields.io/badge/AppVersion-0.38.0-informational?style=flat-square)
+![Version: 1.6.0](https://img.shields.io/badge/Version-1.6.0-informational?style=flat-square) ![AppVersion: 0.43.1](https://img.shields.io/badge/AppVersion-0.43.1-informational?style=flat-square)
 
 locally hosted web application that allows you to perform various operations on PDF files
 
