@@ -1,6 +1,6 @@
 # stirling-pdf-chart
 
-![Version: 1.6.0](https://img.shields.io/badge/Version-1.6.0-informational?style=flat-square) ![AppVersion: 0.43.1](https://img.shields.io/badge/AppVersion-0.43.1-informational?style=flat-square)
+![Version: 1.7.0](https://img.shields.io/badge/Version-1.7.0-informational?style=flat-square) ![AppVersion: 0.43.2](https://img.shields.io/badge/AppVersion-0.43.2-informational?style=flat-square)
 
 locally hosted web application that allows you to perform various operations on PDF files
 
@@ -61,12 +61,14 @@ helm repo add stirling-pdf https://stirling-tools.github.io/Stirling-PDF-chart
 | podAnnotations | object | `{}` | Read more about kube2iam to provide access to s3 https://github.com/jtblin/kube2iam |
 | podLabels | object | `{}` | ref: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/ |
 | priorityClassName | string | `""` |  |
+| probes.liveness.enabled | bool | `true` |  |
 | probes.liveness.failureThreshold | int | `3` |  |
 | probes.liveness.initialDelaySeconds | int | `5` |  |
 | probes.liveness.periodSeconds | int | `10` |  |
 | probes.liveness.successThreshold | int | `1` |  |
 | probes.liveness.timeoutSeconds | int | `1` |  |
 | probes.livenessHttpGetConfig.scheme | string | `"HTTP"` |  |
+| probes.readiness.enabled | bool | `true` |  |
 | probes.readiness.failureThreshold | int | `3` |  |
 | probes.readiness.initialDelaySeconds | int | `5` |  |
 | probes.readiness.periodSeconds | int | `10` |  |
