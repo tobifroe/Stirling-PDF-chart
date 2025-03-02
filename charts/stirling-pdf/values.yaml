@@ -125,6 +125,7 @@ resources: {}
 
 probes:
   liveness:
+    enabled: true
     initialDelaySeconds: 5
     periodSeconds: 10
     timeoutSeconds: 1
@@ -133,6 +134,7 @@ probes:
   livenessHttpGetConfig:
     scheme: HTTP
   readiness:
+    enabled: true
     initialDelaySeconds: 5
     periodSeconds: 10
     timeoutSeconds: 1

@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "stirlingpdf.fullname" . }}
+  namespace: {{ .Release.Namespace }}
   {{- with .Values.deployment.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
@@ -83,18 +84,22 @@ spec:
         ports:
         - name: http
           containerPort: 8080
+{{- if .Values.probes.liveness.enabled }}
         livenessProbe:
           httpGet:
             path: {{ .Values.rootPath}}
             port: http
 {{ toYaml .Values.probes.livenessHttpGetConfig | indent 12 }}
 {{ toYaml .Values.probes.liveness | indent 10 }}
+{{- end }}
+{{- if .Values.probes.readiness.enabled }}
         readinessProbe:
           httpGet:
             path: {{ .Values.rootPath}}
             port: http
 {{ toYaml .Values.probes.readinessHttpGetConfig | indent 12 }}
 {{ toYaml .Values.probes.readiness | indent 10 }}
+{{- end }}
         volumeMounts:
 {{- if .Values.deployment.extraVolumeMounts }}
         {{- toYaml .Values.deployment.extraVolumeMounts | nindent 8 }}
