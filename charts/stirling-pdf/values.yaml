@@ -5,7 +5,7 @@ replicaCount: 1
 strategy:
   type: RollingUpdate
 image:
-  registry: ghcr.io
+  registry: docker.stirlingpdf.com
   repository: stirling-tools/stirling-pdf
   # -- Overrides the image tag whose default is the chart appVersion.
   tag: ""

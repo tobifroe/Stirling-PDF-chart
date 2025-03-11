@@ -1,6 +1,6 @@
 # stirling-pdf-chart
 
-![Version: 1.7.0](https://img.shields.io/badge/Version-1.7.0-informational?style=flat-square) ![AppVersion: 0.43.2](https://img.shields.io/badge/AppVersion-0.43.2-informational?style=flat-square)
+![Version: 1.8.0](https://img.shields.io/badge/Version-1.8.0-informational?style=flat-square) ![AppVersion: 0.44.1](https://img.shields.io/badge/AppVersion-0.44.1-informational?style=flat-square)
 
 locally hosted web application that allows you to perform various operations on PDF files
 
@@ -23,7 +23,7 @@ locally hosted web application that allows you to perform various operations on 
 Add the following repo to use the chart:
 
 ```console
-helm repo add stirling-pdf https://stirling-tools.github.io/Stirling-PDF-chart
+helm repo add stirling-pdf https://docs.stirlingpdf.com/Stirling-PDF-chart
 ```
 
 ## Values
@@ -42,7 +42,7 @@ helm repo add stirling-pdf https://stirling-tools.github.io/Stirling-PDF-chart
 | envsFrom | list | `[]` | Environment variables from secrets or configmaps to add to the stirling-pdf pods |
 | extraArgs | list | `[]` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.registry | string | `"ghcr.io"` |  |
+| image.registry | string | `"docker.stirlingpdf.com"` |  |
 | image.repository | string | `"stirling-tools/stirling-pdf"` |  |
 | image.sha | string | `""` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
